@@ -136,5 +136,5 @@
       "not.image": "File was expected to be an image but was found to be \"{{ fileType }}\""
     }
   },
-  "footer": "To jest stopka"
+  "footer": "PathPlayer @ kubicki.przemyslaw@gmail.com"
 }
