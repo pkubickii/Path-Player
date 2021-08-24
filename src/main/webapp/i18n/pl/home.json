@@ -1,14 +1,14 @@
 {
   "home": {
-    "title": "Witamy, Java Hipsterze!",
-    "subtitle": "To jest twoja strona domowa",
+    "title": "Witamy w Path Player!",
+    "subtitle": "Gdzie się dzisiaj wybierzesz?",
     "logged": {
       "message": "Jesteś zalogowany jako użytkownik \"{{username}}\"."
     },
-    "question": "Jeśli masz jakiekolwiek pytania na temat JHipster:",
+    "question": "Wybierz sposób w jaki chcesz wypróbować swoją drogę:",
     "link": {
-      "homepage": "Strona domowa JHipster",
-      "stackoverflow": "JHipster na Stack Overflow",
+      "freeTravel": "Free Travel",
+      "routeTravel": "Route Travel",
       "bugtracker": "JHipster bug tracker",
       "chat": "Publiczny chat room JHipster",
       "follow": "skontaktuj się z @jhipster na Twitterze"

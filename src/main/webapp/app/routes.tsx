@@ -14,6 +14,8 @@ import PrivateRoute from 'app/shared/auth/private-route';
 import ErrorBoundaryRoute from 'app/shared/error/error-boundary-route';
 import PageNotFound from 'app/shared/error/page-not-found';
 import { AUTHORITIES } from 'app/config/constants';
+import FreeTravel from './modules/freeTravel/freeTravel';
+import RouteTravel from './modules/routeTravel/routeTravel';
 
 const Account = Loadable({
   loader: () => import(/* webpackChunkName: "account" */ 'app/modules/account'),
@@ -29,6 +31,8 @@ const Routes = () => {
   return (
     <div className="view-routes">
       <Switch>
+        <PrivateRoute path="/freetravel" component={FreeTravel} hasAnyAuthorities={[AUTHORITIES.USER]} />
+        <PrivateRoute path="/routetravel" component={RouteTravel} hasAnyAuthorities={[AUTHORITIES.USER]} />
         <ErrorBoundaryRoute path="/login" component={Login} />
         <ErrorBoundaryRoute path="/logout" component={Logout} />
         <ErrorBoundaryRoute path="/account/register" component={Register} />
